@@ -17,4 +17,5 @@ ZSH_CONFIG=$HOME/zsh-config
 
 [ -f $ZSH_CONFIG/env.zsh ] && source $ZSH_CONFIG/env.zsh
 [ -f $ZSH_CONFIG/alias.zsh ] && source $ZSH_CONFIG/alias.zsh
+[ -f $ZSH_CONFIG/theme.zsh ] && source $ZSH_CONFIG/theme.zsh
 
