@@ -11,13 +11,31 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#vi style editing in zsh
-bindkey -v
-# Search backwards and forwards with a pattern
-bindkey -M vicmd '/' history-incremental-pattern-search-backward
-bindkey -M vicmd '?' history-incremental-pattern-search-forward
+#set $VISUAL, as some programs (correctly) use that instead of $EDITOR 
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
-# set up for insert mode too
-bindkey -M viins '^R' history-incremental-pattern-search-backward
-bindkey -M viins '^F' history-incremental-pattern-search-forward
+#tip: to find what key your pressing to get the codes below, do "cat > /dev/null" then press the key
+
+#needed for vim for some raisen
+stty erase '^?'
+
+#emacs style (like bash)
+bindkey -e
+
+#sane deletion
+bindkey '\e[3~' delete-char
+
+#forward and back search
+bindkey '^r' history-incremental-search-backward
+bindkey '^f' history-incremental-search-forward
+
+#home and end
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+
+#ctrl left and right
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 
