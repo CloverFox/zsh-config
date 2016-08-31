@@ -19,3 +19,11 @@ ZSH_CONFIG=$HOME/zsh-config
 [ -f $ZSH_CONFIG/alias.zsh ] && source $ZSH_CONFIG/alias.zsh
 [ -f $ZSH_CONFIG/theme.zsh ] && source $ZSH_CONFIG/theme.zsh
 
+# plugins, save to ~/zsh-plugins
+PLUGIN_CONFIG=$HOME/zsh-plugins
+
+# https://github.com/zsh-users/zsh-syntax-highlighting
+# note, should be at the end of he load order
+source $PLUGIN_CONFIG/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
