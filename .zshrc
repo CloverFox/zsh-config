@@ -22,6 +22,9 @@ ZSH_CONFIG=$HOME/zsh-config
 # plugins, save to ~/zsh-plugins
 PLUGIN_CONFIG=$HOME/zsh-plugins
 
+# https://github.com/zsh-users/zsh-autosuggestions
+source $PLUGIN_CONFIG/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # note, should be at the end of he load order
 source $PLUGIN_CONFIG/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
