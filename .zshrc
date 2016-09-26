@@ -29,4 +29,6 @@ source $PLUGIN_CONFIG/zsh-autosuggestions/zsh-autosuggestions.zsh
 # note, should be at the end of he load order
 source $PLUGIN_CONFIG/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
+# also install fzf https://github.com/junegunn/fzf
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install
